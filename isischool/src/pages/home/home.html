@@ -1,0 +1,64 @@
+<ion-content >
+  <ion-slides pager>
+
+      <ion-slide>
+          <div class="diag" >
+            <ion-icon  color="primary">
+                <img src="assets/imgs/isi.png" style="width: 100%" />
+            </ion-icon>
+
+          </div>
+          <div>
+              <h2>Institut Supérieur d'Informatique</h2>
+              <p>La réalisation de votre projet d'études professionnel à l'ISI commence ici.</p>
+            </div>
+        </ion-slide>
+
+        <ion-slide>
+            <div class="diag">
+              <ion-icon ios="ios-school" md="md-school" color="primary">
+              </ion-icon>
+
+            </div>
+            <div>
+                <h2>Trouvez votre programme</h2>
+                <p>l’Ecole vous propose une offre d’études complète dans une multitude de domaines.</p>
+              </div>
+          </ion-slide>
+
+    <ion-slide>
+      <div class="diag" style="background: url('assets/img/whitebg.svg') no-repeat">
+        <ion-icon ios="ios-folder-open" md="ios-folder-open" color="primary">
+        </ion-icon>
+      </div>
+      <div>
+          <h2>Dossier en ligne</h2>
+          <p>Préparez votre dossier de candidature afin de déposer votre demande d’admission.</p>
+        </div>
+    </ion-slide>
+
+    <ion-slide>
+        <div class="diag" style="background: url('assets/img/whitebg.svg') no-repeat">
+          <ion-icon ios="ios-briefcase" md="ios-briefcase" color="primary">
+          </ion-icon>
+        </div>
+        <div>
+            <h2>E-Classe</h2>
+            <p>Emploi du temp, cours, TP et autres a temps réel sur votre compte etudiant.</p>
+          </div>
+      </ion-slide>
+
+    <ion-slide>
+      <div class="diag" style="background: url('assets/img/whitebg.svg') no-repeat">
+        <ion-icon ios="ios-flask" md="ios-flask" color="primary">
+        </ion-icon>
+      </div>
+      <div>
+          <h2>Recherche et Innovation</h2>
+          <p>Augmentez vos chances de réussite avec notre laboratoire de recherche en informatique.</p>
+        </div>
+    </ion-slide>
+  </ion-slides>
+
+  <button (click)="skip()" id="skip">{{ skipMsg }}</button>
+</ion-content>

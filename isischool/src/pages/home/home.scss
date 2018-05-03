@@ -1,0 +1,48 @@
+.diag{
+  position:absolute;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  height: 66%;
+}
+
+ion-icon{
+  margin-top: 40%;
+  font-size: 7em;
+}
+h2{
+  margin-top: 35% !important;
+  font-weight: bold;
+  font-size: 1em;
+}
+p {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.swiper-pagination-bullet-active{
+  background: #488aff;
+}
+
+.swiper-pagination{
+  bottom: 12% !important;
+}
+
+#skip{
+position: absolute;
+bottom: 20px;
+width: 100%;
+background: none !important;
+text-align: center;
+cursor: pointer;
+z-index: 5;
+}
+
+.bg-image {
+  background-image: url('../assets/imgs/cover.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
