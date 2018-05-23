@@ -14,8 +14,12 @@ import { IonicPage, NavController, NavParams, MenuController, Content  } from 'i
   templateUrl: 'menu.html',
 })
 export class MenuPage {
+  public firstName ="";
+  public lastname="";
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public menuCtrl: MenuController) {
+    this.firstName = this.navParams.get("firstName");
+    this.lastname= this.navParams.get("lastName");
   }
 
   ionViewDidLoad() {

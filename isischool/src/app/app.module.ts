@@ -9,18 +9,24 @@ import { HomePage } from '../pages/home/home';
 import { MainPage } from '../pages/main/main';
 import {LoginPage} from '../pages/login/login'
 import { MenuPage } from '../pages/menu/menu';
-
+import { InscriptionPage } from '../pages/inscription/inscription';
+import {IonicStorageModule} from '@ionic/storage';
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     MainPage,
     LoginPage,
-    MenuPage
+    MenuPage,
+    InscriptionPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot({
+      name:'__mydb',
+      driverOrder:['indexeddb', 'sqlite', 'websql']
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -28,7 +34,8 @@ import { MenuPage } from '../pages/menu/menu';
     HomePage,
     MainPage,
     LoginPage,
-    MenuPage
+    MenuPage,
+    InscriptionPage
   ],
   providers: [
     StatusBar,

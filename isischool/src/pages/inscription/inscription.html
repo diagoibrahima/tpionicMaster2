@@ -1,0 +1,66 @@
+<!--
+  Generated template for the InscriptionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>inscription</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content class="ins" padding>
+  <ion-card class="hea">
+    <ion-card-header>
+        <ion-grid>
+            <ion-row>
+                <ion-col col-4></ion-col>
+                <ion-col col-4 style="margin-left: auto;margin-right: auto;display: block;">
+                    <img src="assets/imgs/isi.png">
+                </ion-col>
+                <ion-col col-4></ion-col>
+            </ion-row>
+        </ion-grid>
+       <h1>INSCRIPTION</h1>
+    </ion-card-header>
+</ion-card>
+<ion-card>
+  <ion-card-content>
+
+  <ion-list class="list-form" style="margin-top:30px;margin-bottom: 30px">
+
+      <ion-item style="padding:0px !important; border-bottom:none !important;border-top:none;font-size: 14px;margin-top:10px;background:none;border-bottom:1px solid gray;box-shadow:none;">
+          <ion-label floating>First Name</ion-label>
+          <ion-input style="color:black;border-bottom-color:black;box-shadow:none;" type="text"  #firstname></ion-input>
+      </ion-item>
+      <ion-item style="padding:0px !important; border-bottom:none !important;border-top:none;font-size: 14px;margin-top:10px;background:none;border-bottom:1px solid gray;box-shadow:none;">
+          <ion-label floating>Last Name</ion-label>
+          <ion-input style="color:black;border-bottom-color:black;box-shadow:none;" type="text" #lastname></ion-input>
+      </ion-item>
+      <ion-item>      
+          <ion-label>Degree</ion-label>
+      </ion-item>
+      <ion-item>      
+          <ion-label>O'Level</ion-label>
+          <ion-checkbox  value="O'Level" #level></ion-checkbox>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>Bachelor</ion-label>
+          <ion-checkbox color="dark" value="Bachelor" #bachelor ></ion-checkbox>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>Master</ion-label>
+          <ion-checkbox value="Master" #master ></ion-checkbox>
+        </ion-item>
+      
+  </ion-list>
+
+  <button style="margin-top: 15px;height: 35px;font-size: 14px;background: #34abee;" ion-button block (click)="inscriptionEtu()">Save</button>
+</ion-card-content>
+</ion-card>
+  
+</ion-content>
